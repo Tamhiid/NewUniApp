@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+
+    <item
+        android:id="@+id/dashboard"
+        android:icon="@drawable/dashboard"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/announcement"
+        android:icon="@drawable/announcement"
+        android:title="Announcements" />
+
+    <item
+        android:id="@+id/student_statement"
+        android:icon="@drawable/statement"
+        android:title="Student Statement" />
+    <item
+        android:id="@+id/result"
+            android:icon="@drawable/results"
+        android:title="Results" />
+    <item
+        android:id="@+id/student_material"
+        android:icon="@drawable/material"
+        android:title="Student material" />
+    <item
+        android:id="@+id/view"
+        android:icon="@drawable/view"
+        android:title="View" />
+ <item
+        android:id="@+id/upload_assignment"
+     android:icon="@drawable/upload"
+        android:title="Upload Assignment" />
+ <item
+        android:id="@+id/assignment_you_sent"
+     android:icon="@drawable/send"
+        android:title="Assignment You Sent" />
+ <item
+        android:id="@+id/view_teachers"
+     android:icon="@drawable/teacher"
+        android:title="View Teachers" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="logout" />
+
+</menu>

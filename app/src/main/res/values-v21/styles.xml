@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <!--to toggle the open close button
+        of the navigation drawer-->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+</resources>
