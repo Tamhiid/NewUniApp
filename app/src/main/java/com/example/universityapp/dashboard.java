@@ -10,6 +10,7 @@ import android.content.ClipData;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
@@ -77,10 +78,35 @@ public class dashboard extends AppCompatActivity implements NavigationView.OnNav
     // the item click listener callback
     // to open and close the navigation
     // drawer when the icon is clicked
+
+    // Menu Items Start
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.options_menu, menu);
+        return true;
+    }
+
+
+
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
+        int id = item.getItemId();
+        if(id == R.id.logout){
+            sharedPreferencedata.putParentName("");
+            sharedPreferencedata.putSemesterName("");
+            sharedPreferencedata.putStatus("");
+            sharedPreferencedata.putStudentName("");
+            sharedPreferencedata.putSemesterID("");
+            sharedPreferencedata.putClassName("");
+            sharedPreferencedata.putCode("");
+            sharedPreferencedata.putClassID("");
+            sharedPreferencedata.putStudentId("");
+
+            Intent i = new Intent(getApplicationContext(), login_activity.class);
+            startActivity(i);
+        }else if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
 
             return true;
         }
@@ -115,18 +141,10 @@ public class dashboard extends AppCompatActivity implements NavigationView.OnNav
         }else if(id == R.id.view_teachers){
             Intent i = new Intent(getApplicationContext(), viewTeachers.class);
             startActivity(i);
-        }else if(id == R.id.logout){
-            sharedPreferencedata.putParentName("");
-            sharedPreferencedata.putSemesterName("");
-            sharedPreferencedata.putStatus("");
-            sharedPreferencedata.putStudentName("");
-            sharedPreferencedata.putSemesterID("");
-            sharedPreferencedata.putClassName("");
-            sharedPreferencedata.putCode("");
-            sharedPreferencedata.putClassID("");
-            sharedPreferencedata.putStudentId("");
+        }else if(id == R.id.profile){
 
-            Intent i = new Intent(getApplicationContext(), login_activity.class);
+
+            Intent i = new Intent(getApplicationContext(), ActivityProfile.class);
             startActivity(i);
               }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.my_drawer_layout);

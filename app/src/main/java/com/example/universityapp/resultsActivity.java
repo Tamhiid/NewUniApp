@@ -10,6 +10,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -59,16 +60,36 @@ public class resultsActivity extends AppCompatActivity implements NavigationView
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+    // Menu Items Start
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.options_menu, menu);
+        return true;
+    }
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
+        int id = item.getItemId();
+        if(id == R.id.logout){
+            sharedPreferencedata.putParentName("");
+            sharedPreferencedata.putSemesterName("");
+            sharedPreferencedata.putStatus("");
+            sharedPreferencedata.putStudentName("");
+            sharedPreferencedata.putSemesterID("");
+            sharedPreferencedata.putClassName("");
+            sharedPreferencedata.putCode("");
+            sharedPreferencedata.putClassID("");
+            sharedPreferencedata.putStudentId("");
+
+            Intent i = new Intent(getApplicationContext(), login_activity.class);
+            startActivity(i);
+        }else if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
 
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();

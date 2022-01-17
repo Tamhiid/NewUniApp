@@ -43,8 +43,8 @@
      android:icon="@drawable/teacher"
         android:title="View Teachers" />
     <item
-        android:id="@+id/logout"
+        android:id="@+id/profile"
         android:icon="@drawable/logout"
-        android:title="logout" />
+        android:title="Profile" />
 
 </menu>

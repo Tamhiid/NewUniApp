@@ -14,16 +14,22 @@
         <entry key="..\:/University App/app/src/main/res/layout/activity_view_teachers.xml" value="0.20416666666666666" />
         <entry key="..\:/University App/app/src/main/res/layout/nav_header_user_home.xml" value="0.20416666666666666" />
         <entry key="..\:/University App/app/src/main/res/menu/navigation_menu.xml" value="0.20416666666666666" />
+        <entry key="app/src/main/res/drawable/background.xml" value="0.22453117080587937" />
         <entry key="app/src/main/res/drawable/bg_gradient.xml" value="0.20185185185185187" />
         <entry key="app/src/main/res/drawable/buttondesign.xml" value="0.22870370370370371" />
+        <entry key="app/src/main/res/drawable/fasal.xml" value="0.22453117080587937" />
+        <entry key="app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.22453117080587937" />
+        <entry key="app/src/main/res/drawable/parent.xml" value="0.22453117080587937" />
         <entry key="app/src/main/res/layout/activity_announcement.xml" value="0.22780797101449277" />
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.26614583333333336" />
         <entry key="app/src/main/res/layout/activity_login_activity.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_student_material.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/layout/activity_student_statement.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/layout/nav_header_user_home.xml" value="0.234375" />
         <entry key="app/src/main/res/layout/progressbar.xml" value="0.10625" />
         <entry key="app/src/main/res/menu/navigation_menu.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/menu/options_menu.xml" value="0.26197916666666665" />
       </map>
     </option>
   </component>
